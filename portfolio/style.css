@@ -1,0 +1,339 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+
+  h2 {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 1rem;
+  }
+
+  p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+    /* font-size: 1rem; */
+  }
+
+  h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  i {
+    color: #60b8d5;
+    margin-right: 0.3rem;
+    ;
+  }
+
+  main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .glass {
+    margin: 30px 0 30px 0;
+    background: white;
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+  }
+
+  .user {
+    margin-top: .7rem;
+  }
+
+  .user img {
+    width: 60px;
+    height: auto;
+  }
+
+  .circle1,
+  .circle2 {
+    background: white;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle1 {
+    top: 5%;
+    right: 15%;
+  }
+
+  .circle2 {
+    bottom: 5%;
+    left: 10%;
+  }
+
+  .dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+  }
+
+  article {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f7fcff; */
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .container .box {
+    position: relative;
+    display: flex;
+    width: 40%;
+    background: linear-gradient(to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+    /* padding: 1.3rem; */
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+    /* box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05); */
+    overflow: hidden;
+  }
+
+  .container .box .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    /* transition-delay: 0.5s; */
+    transform: scale(1) translateY(0);
+  }
+
+  .container .box:hover .imgBox {
+    transform: scale(1) translateY(-100%);
+    /* transition-delay: 0s; */
+  }
+
+  .container .box .imgBox img {
+    max-width: 80px;
+  }
+
+  .container .box .content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.5s;
+    background: #ff3579;
+    transform: scale(1) translateY(calc(100% - 5px));
+    /* transition-delay: 0s; */
+  }
+
+  .container .box:hover .content {
+    transform: scale(1);
+    /* transition-delay: 0.5s; */
+  }
+
+  .container .box:nth-child(2) .content {
+    background: #2ba1ff;
+  }
+
+  .container .box:nth-child(3) .content {
+    background: #c630e0;
+  }
+
+  .container .box .content .icon img {
+    max-width: 60px;
+    filter: invert(1);
+  }
+
+  .container .box .content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  .container .box .content h4 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .link {
+    display: flex;
+    margin: 0.3rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+  }
+
+  .link:hover,
+  .link:focus {
+    /* background-color: #426696; */
+    /* background-color: #658ec6; */
+    background: white;
+    cursor: pointer;
+    /* color: white; */
+  }
+
+  span {
+    font-size: .9rem;
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+
+  .link h2 {
+    padding: 0rem 2rem;
+  }
+
+  .games {
+    flex: 2;
+
+  }
+
+  .pro {
+    /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .pro img {
+    position: absolute;
+    top: -10%;
+    width: 60px;
+    right: 10%;
+  }
+
+  .pro h2 {
+    width: 60%;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* GAMES */
+  .status {
+    margin-bottom: 0.8rem;
+  }
+
+  .status input {
+    background: linear-gradient(to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+
+  .games {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+    /* justify-content: space-evenly; */
+  }
+
+  .cards {
+    /* display: none; */
+  }
+
+  .card {
+    display: flex;
+    background: linear-gradient(to left top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    padding: 1.3rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+  }
+
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
