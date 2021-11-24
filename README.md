@@ -1,5 +1,8 @@
 git init -b main
-git add . && git commit -m "initial commit"
+$ git add .
+# Adds the file
+$ git commit -m "First commit"
+# Commits the tracked changes and prepares them to be pushed to a remote repository.
 $ git remote add origin  <REMOTE_URL> 
 # Sets the new remote
 $ git remote -v
