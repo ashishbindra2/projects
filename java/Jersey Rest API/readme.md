@@ -14,7 +14,7 @@
  + POST --> creating a resorces
  + PUT --> Update
  + DELETE --> removing a resource
- + 
+ + @PathParam
 
 
 # Error
@@ -40,12 +40,13 @@
  <version>3.0.1</version>
 </dependency>
 - HTTP Status 400 – Bad Request --> for postman add Content-Type in Header key section and in value add application/xml
-- 
+- HTTP Status 500 -> means sonthing wrong with server.
+- MessageBodyWriter not found for media type=application/json add or un
 
 
 # Warrning
 + WARNING: The following warnings have been detected: WARNING: A resource, Resource{"students", 0 child resources, 0 resource methods, 0 sub-resource locator, 0 method handler classes, 0 method handler instances}, with path "students" is empty. It has no resource (or sub resource) methods neither sub resource locators defined.
-+ use @GET for above error solution.
++ use @GET for above error solution. commented in pom.xml file.()media moxy
 + 
 
 # port
