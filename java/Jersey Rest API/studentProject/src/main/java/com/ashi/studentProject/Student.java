@@ -2,27 +2,19 @@ package com.ashi.studentProject;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-//import java.sql.Date;
+import java.sql.Date;
 
 //import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Student {
 	
-	
-	private int studentId;
 	private int studentNo;
 	private String studentName;
-	private String studentDob;
-	private String studentDoj;
+	private Date studentDob;
+	private Date studentDoj;
 	
-	
-	public int getStudentId() {
-		return studentId;
-	}
-	public void setStudentId(int studentId) {
-		this.studentId = studentId;
-	}
+
 	public int getStudentNo() {
 		return studentNo;
 	}
@@ -35,23 +27,23 @@ public class Student {
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-	public String getStudentDob() {
+	public Date getStudentDob() {
 		return studentDob;
 	}
-	public void setStudentDob(String string) {
+	public void setStudentDob(Date string) {
 		this.studentDob = string;
 	}
-	public String getStudentDoj() {
+	public Date getStudentDoj() {
 		return studentDoj;
 	}
-	public void setStudentDoj(String string) {
+	public void setStudentDoj(Date string) {
 		this.studentDoj = string;
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", studentNo=" + studentNo + ", studentName=" + studentName
+		return "Student [ studentNo=" + studentNo + ", studentName=" + studentName
 				+ ", studentDob=" + studentDob + ", studentDoj=" + studentDoj + "]";
 	}
 }
