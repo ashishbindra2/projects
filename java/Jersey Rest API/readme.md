@@ -3,13 +3,25 @@
 - Maven
 - jersey 1.19.4/3.0.3
 
+### Information
+- for data base insted of dao file here we use repository.
+- 
+
 # Annotation
  + @path() 
+ + @produces() --> geting and send which type of meida xml or jason
+ + @GET --> fetching the data
+ + POST --> creating a resorces
+ + PUT --> Update
+ + DELETE --> removing a resource
+ + 
+
+
 # Error
 - The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
 -  right click on project, go to property,select taget runtime slect server(tomcat)
 -  HTTP Status 500 – Internal Server Error --> use this @Produces(MediaType.APPLICATION_XML)
--  SEVERE: MessageBodyWriter not found for media type=application/xml--> use this @XmlRootElement
+-  SEVERE: MessageBodyWriter not found for media type=application/xml--> use this @XmlRootElement becouse we geting data in xml.
 -  if not solve use following given dependency
 -  <dependency>
  <groupId>jakarta.xml.bind</groupId>
@@ -27,7 +39,8 @@
  <artifactId>jaxb-osgi</artifactId>
  <version>3.0.1</version>
 </dependency>
--
+- HTTP Status 400 – Bad Request --> for postman add Content-Type in Header key section and in value add application/xml
+- 
 
 
 # Warrning
