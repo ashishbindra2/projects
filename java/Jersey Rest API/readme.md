@@ -1,4 +1,9 @@
+## Tools & Technology
+- Eclipse IDE EE Version: 2021-03 (4.19.0).
+- 
+
 # Error
+
 # port
 - open apachi folder 
 - open conf folder
@@ -6,14 +11,16 @@
 - changer port throgh connector port
 
 # Rest API
-- if you want to send state of object as jason/xml
+- if you want to send state of object as jason/xml.
+- we can send request and get reponse
 - A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources
- ## HTTP Method
+- jersey & Sparing for implentation 
+-  ## HTTP Method
  + C -> Create -> POST
  + R -> Read -> GET
  + U -> Update -> PUT
  + D -> Delete -> DELETE
-- jersey & Sparing for implentation 
+- Rest is just concept 
 
 # MySQL 
 
