@@ -96,4 +96,15 @@ public class StudentRepository {
 		}
 
 	}
+
+	public Student removeStudent(int id) {
+		String sql = "DELETE FROM student WHERE student_no ="+id;
+		try {
+			PreparedStatement st = con.prepareStatement(sql);
+			st.executeUpdate();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
 }

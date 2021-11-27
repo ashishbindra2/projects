@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.PUT;
@@ -29,6 +30,12 @@ public class StudentResource {
 	public Student getStudent(@PathParam("id") int id) {
 		return repo.getStudent(id);
 	}
+	@DELETE
+	@Path("student/{id}")
+	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
+	public Student removeStudent(@PathParam("id") int id) {
+		return repo.removeStudent(id);
+	}
 
 	@PUT
 	@Path("student")
@@ -43,7 +50,6 @@ public class StudentResource {
 	@Path("student")
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Student createStudent(Student s1) {
-		System.out.println(s1);
 		repo.addNewStudent(s1);
 		return s1;
 	}
